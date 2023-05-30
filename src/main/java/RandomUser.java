@@ -6,7 +6,7 @@ public class RandomUser {
         return new User("Pavlik48@yandex.ru", "123456789", "Pavlik48");
     }
 
-    public static User random() {
+    public static User randomGenerate() {
         return new User(RandomStringUtils.randomAlphabetic(10) + "@yandex.ru", "123456789", "Pavlik48");
     }
 }
