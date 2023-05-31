@@ -39,6 +39,14 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public User Copy() {
+        User copyUser = new User();
+        copyUser.setName(this.name);
+        copyUser.setEmail(this.email);
+        copyUser.setPassword(this.password);
+        return copyUser;
+    }
 }
 
 
